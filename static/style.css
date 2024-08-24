@@ -1,0 +1,250 @@
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+
+/* Define the font-face */
+@font-face {
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/asap/v15/KFOkCnqEu92Fr1MmgVxIIzc.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+  background-color: #FFE5E5;
+  color: #333;
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #afa6e2;
+  padding: 3px 20px;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 70px;
+  margin: 0 5px;
+  color: #ac592f;
+  text-decoration: none;
+  border: 2px solid #afa6e2;
+  background-color: #e0aed0;
+  border-radius: 21px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background-color: #FF8E8F;
+  color: #640D6B;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.price-table {
+  border: 3px solid #756ab6;
+  background-color: white; 
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  width: 290px;
+  height: 406px;
+  grid-column: 3;
+  margin-top: calc(53px + 30px);
+  margin-left: 20px;
+}
+
+.price-table h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  height: 60px;
+  margin: 0 30px;
+  color: #4f40a8;
+  background-color: #ffe5e5;
+  border-radius: 80px;
+  transition: background-color 0.3s;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 19px;
+}
+
+.price-image-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.price-image {
+  width: 50px;
+  height: auto;
+}
+
+.price-description {
+  margin: 0; 
+  font-weight: bold;
+  text-align: center;
+}
+
+.price-description#leaf,
+.price-description#water,
+.price-description#fungus {
+  margin-top: 5px;
+}
+
+.price-detail {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  align-self: flex-start;
+  margin: 13px 0 0 13px;
+}
+
+.price-image-description img[src*="Leaf.png"],
+.price-image-description img[src*="Water.png"] {
+  width: 45px;
+  height: auto;
+} 
+
+.price-counting {
+  grid-column: 2;
+}
+
+.rss-counting {
+  text-align: center;
+}
+
+.rss-counting-table {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 3px solid #756ab6;
+  width: 471px;
+  height: 299px;
+  margin: 0 auto;
+}
+
+.rss-counting .title {
+  font-family: 'Bungee', Arial, sans-serif;
+  margin: 15px 0;
+  color: #000;
+  font-size: 40px;
+}
+
+.rss-counting-table h2 {
+    margin: 0;
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+}
+
+.rss-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+.rss-item {
+    width: 45%;
+    margin: 20px 0;
+}
+
+.box-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.box-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.item-rss {
+    font-size: 19px;
+    font-weight: bold;
+    color: #000;
+}
+
+input[type="number"] {
+  width: 80%;
+  padding: 5px;
+  font-size: 14px;
+  border: 2px solid #000;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 3px solid #756ab6;
+    background-color: white;
+    width: 471px;
+    height: 57px;
+    margin: 23px auto;
+    font-size: 25px;
+}
+
+.label {
+    flex: 1;
+    text-align: left;
+}
+
+#total {
+  flex: 1;
+  text-align: center;
+}
+
+.currency {
+  flex: 1;
+  text-align: right;
+}

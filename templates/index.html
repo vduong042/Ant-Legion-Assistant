@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RSS Cost Counting</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&family=Bungee&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../static/style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/4.6.0/AutoNumeric.min.js"></script>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="header">
+                <img src="../static/Image/logo.png" alt="Logo" class="logo" />
+                <nav class="navigation">
+                    <a href="#" class="nav-link">RSS Price</a>
+                    <a href="#" class="nav-link">Training</a>
+                    <a href="#" class="nav-link">Coming soon...</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="price-counting">
+                <div class="rss-counting">
+                    <h1 class="title">RSS Cost Counting</h1>
+
+                    <div class="rss-counting-table">
+                        <h2> RSS Amount Assign</h2>
+
+                        <div class="rss-inputs">
+                            <div class="rss-item">
+                                <div class="box-item">
+                                    <img
+                                        src="../static/Image/Food.png"
+                                        alt="Food"
+                                    />
+                                    <span class="item-rss">Food</span>
+                                </div>
+                                <input
+                                    type="number"
+                                    id="food"
+                                    value="0"
+                                    min="0"
+                                />
+                            </div>
+                            <div class="rss-item">
+                                <div class="box-item">
+                                    <img
+                                        src="../static/Image/Leaf.png"
+                                        alt="Food"
+                                    />
+                                    <span class="item-rss">Leaf</span>
+                                </div>
+                                <input
+                                    type="number"
+                                    id="leaf"
+                                    value="0"
+                                    min="0"
+                                />
+                            </div>
+                            <div class="rss-item">
+                                <div class="box-item">
+                                    <img
+                                        src="../static/Image/Water.png"
+                                        alt="Food"
+                                    />
+                                    <span class="item-rss">Water</span>
+                                </div>
+                                <input
+                                    type="number"
+                                    id="water"
+                                    value="0"
+                                    min="0"
+                                />
+                            </div>
+                            <div class="rss-item">
+                                <div class="box-item">
+                                    <img
+                                        src="../static/Image/Fungus.png"
+                                        alt="Food"
+                                    />
+                                    <span class="item-rss">Fungus</span>
+                                </div>
+                                <input
+                                    type="number"
+                                    id="fungus"
+                                    value="0"
+                                    min="0"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <span class="label">TOTAL :</span>
+                    <span id="total">0</span>
+                    <span class="currency">vnd</span>
+                </div>
+            </div>
+
+            <div class="price-table">
+                <h2>Reference Price List</h2>
+
+                <div class="price-item">
+                    <div class="price-image-description">
+                        <img
+                            src="../static/Image/Food.png"
+                            alt="Food"
+                            class="price-image"
+                        />
+                        <p class="price-description" id="food">Food</p>
+                    </div>
+                    <span class="price-detail" id="price-food">400đ / 1M</span>
+                </div>
+
+                <div class="price-item">
+                    <div class="price-image-description">
+                        <img
+                            src="../static/Image/Leaf.png"
+                            alt="Food"
+                            class="price-image"
+                        />
+                        <p class="price-description" id="leaf">Leaf</p>
+                    </div>
+                    <span class="price-detail" id="price-leaf">400đ / 1M</span>
+                </div>
+
+                <div class="price-item">
+                    <div class="price-image-description">
+                        <img
+                            src="../static/Image/Water.png"
+                            alt="Food"
+                            class="price-image"
+                        />
+                        <p class="price-description" id="water">Water</p>
+                    </div>
+                    <span class="price-detail" id="price-water"
+                        >5000đ / 1M</span
+                    >
+                </div>
+
+                <div class="price-item">
+                    <div class="price-image-description">
+                        <img
+                            src="../static/Image/Fungus.png"
+                            alt="Food"
+                            class="price-image"
+                        />
+                        <p class="price-description" id="fungus">Fungus</p>
+                    </div>
+                    <span class="price-detail" id="price-fungus"
+                        >8000đ / 1M</span
+                    >
+                </div>
+            </div>
+        </div>
+
+        <script src="../static/script.js"></script>
+
+    </body>
+</html>
